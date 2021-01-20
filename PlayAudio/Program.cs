@@ -13,9 +13,13 @@ namespace PlayAudio
                 Console.WriteLine("PlayAudio v1.0");
                 Console.WriteLine();
                 Console.WriteLine("PlayAudio <SoundFile> <AudioDevice>");
+                Console.WriteLine(" <SoundFile> can be wav or mp3");
+                Console.WriteLine(" <AudioDevice> is either GUID of the device or parts of the device name");
+                Console.WriteLine();
+                Console.WriteLine("Available devices:");
                 foreach (var dev in DirectSoundOut.Devices)
                 {
-                    Console.WriteLine($"{dev.Description} --- GUID: {dev.Guid}");
+                    Console.WriteLine($"* {dev.Description} --- GUID: {dev.Guid}");
                 }
                 return;
             }

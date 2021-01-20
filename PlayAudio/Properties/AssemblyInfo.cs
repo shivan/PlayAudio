@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
 [assembly: AssemblyTitle("PlayAudio")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Commandline audio player")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PlayAudio")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("Copyright ©  2021 Markus Stein")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
