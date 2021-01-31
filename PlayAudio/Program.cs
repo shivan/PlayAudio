@@ -46,11 +46,13 @@ namespace PlayAudio
                     if (dev.Guid.ToString().Contains(DeviceName))
                     {
                         deviceGuid = dev.Guid;
-                        Console.WriteLine($"{dev.Guid} {dev.ModuleName} -  {dev.Description}");
+                        Console.WriteLine($"{dev.Guid} {dev.ModuleName}");
+                        Console.WriteLine($"{dev.Description}");
                         break;
                     }
                 }
             }
+            Console.WriteLine("Playing: " + audioFileName);
             
             using (var audioFile = new AudioFileReader(audioFileName))
             using (var outputDevice = new DirectSoundOut(deviceGuid))
